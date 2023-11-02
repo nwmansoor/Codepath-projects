@@ -1,0 +1,10 @@
+Wireshark allows us to analyze network traffic by parsing through the different types of network logs such as the .pcap files we were using in the lab and project. It does this by displaying the file in an easy to read format in the Wireshark GUI, and with the use of the filter option you are able to categorize data that you need to look at instead of going through the thousands of logs that might appear in a .pcap file.
+
+I first opened the Azure VM through RDP then I unzipped the .pcap files provided using the command unzip pcap_files.zip 
+then I checked the file explorer to make sure the .zip files had been extracted. 
+After that I opened each of the 4 .pcap files into Wireshark and used the search term smtp.data.fragment which showed me the smtp packets that contained the subject lines and the email addresses. 
+And by this I was able to rule out that .pcap files A, B, D were legitimate and .pcap files C contained emails from a malicious user with the IP address 10.6.1.104,
+and this IP was also posing as several different email addresses. 
+Then I read the body of the emails using tcp stream and then downloading the .eml files and reading it in an email client where the malicious user was extorting the recipient, the victim.
+
+https://courses.codepath.org/course_files/cyb102/project_1/pcap_files.zip (The pcap files used to analyze network traffic)
