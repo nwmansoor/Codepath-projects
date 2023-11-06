@@ -10,3 +10,5 @@ Week 3 - Configure Snort to Track Network Communication
 Week 4 - Run a Slowloris attack on a nginx proxy server & Configure DoS Mitigation Rules
 
 Week 5 - Apply Splunk search, analysis, and visualization techniques to solve real-world problems
+
+Week 6 - Threat Hunting using MISP & Splunk
